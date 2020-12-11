@@ -78,7 +78,7 @@ def check_columns():
 	elif board[1] == board[4] and board[4] == board[7] and board[4]!=" ":
 		winner = board[4]
 		game_status = "ended"
-	elif board[2] == board[5] and board[8] == board[8] and board[5]!=" ":
+	elif board[2] == board[5] and board[5] == board[8] and board[5]!=" ":
 		winner = board[5]
 		game_status = "ended"
 
@@ -97,7 +97,7 @@ def check_diagonals():
 
 def check_tie():
 	global game_status, winner
-	if board[0] != " " and board[1] != " " and board[2] != " " and board[3] != " " and board[4] != " " and board[5] != " " and board[6] != " " and board[7] != " " and board[8] != " " and board[9] != " ":
+	if board[0] != " " and board[1] != " " and board[2] != " " and board[3] != " " and board[4] != " " and board[5] != " " and board[6] != " " and board[7] != " " and board[8] != " ":
 		game_status = "ended"
 		winner = "none"
 
